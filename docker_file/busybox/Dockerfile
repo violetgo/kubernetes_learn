@@ -1,6 +1,7 @@
 FROM scratch
-ADD busybox /bin/
+MAINTAINER violetgo <china.weigao@gmail.com>
 
+ADD busybox /bin/
 RUN ["/bin/busybox","ln","-s","/bin/busybox","/bin/addgroup"]
 RUN ["/bin/busybox","ln","-s","/bin/busybox","/bin/adduser"]
 RUN ["/bin/busybox","ln","-s","/bin/busybox","/bin/awk"]
